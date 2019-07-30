@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Javier Lopez Y Jorge Gerrero }
+\title{Hoja de trabajo 1}
+\begin{document}
+\begin{Huge}
+Hoja de trabajo \# 1
+\end{Huge}
+
+\begin{itemize}
+\item Javier Lopez 2019-1204
+\item Jorge Guerrero  2019-1096
+\end{itemize}
+
+\section*{Ejercicio \#1 (5\%)}
+{\Large Nuestro repositorio es: \\https://github.com/javierlopezg00/TareasInformaticaJorgeYJavier.git}
+\section*{Ejercicio \#2: Abstracci\'on (50\%)}
+
+\section*{1) Conjunto de nodos}
+
+\begin{LARGE}
+\begin{flushleft}
+(1,1)|(2,2)|(3,3)|(4,4)|(5,5)|(6,6)\\
+(1,2)|(2,3)|(3,4)|(4,5)|(5,6)\\
+(1,3)|(2,4)|(3,5)|(4,6)\\
+(1,4)|(2,5)|(3,6)\\
+(1,5)|(2,6)\\
+(1,6)
+\end{flushleft}
+\end{LARGE}
+\section*{2) Conjunto de vértices}
+\begin{LARGE}
+\begin{flushleft}
+(1,1)=  (1,2)(1,3)(1,4)(1,5)\\
+(2,2)=  (2,1)(2,3)(2,4)(2,6)\\
+(3,3)=  (3,1)(3,2)(3,5)(3,6)\\
+(4,4)=  (4,1)(4,2)(4,5)(4,6)\\
+(5,5)=  (5,1)(5,3)(5,4)(5,6)\\
+(6,6)=  (6,2)(6,3)(6,4)(6,5)\\
+
+\end{flushleft}
+\begin{flushleft}
+(1,2)	=	(1,1)(2,2)  (1,3)(1,4)(1,6)  (3,2)(4,2)(6,2)\\
+(1,3)	=	(1,1)(3,3)  (1,2)(1,5)(1,6)  (2,3)(5,3)(6,3)\\
+(1,4)	=	(1,1)(4,4)  (1,2)(1,5)(1,6)  (2,4)(5,4)(6,4)\\
+(1,5)	=	(1,1)(5,5)  (1,3)(1,4)(1,6)  (3,5)(4,5)(6,5)\\
+(1,6)	=	(1,2)(1,3)  (1,4)(1,5)(2,6)  (3,6)(4,6)(5,6)\\
+\end{flushleft}
+
+\begin{flushleft}
+(2,3)= (2,2)(3,3)  (2,1)(2,5)(2,6)  (1,3)(4,3)(6,3)\\
+(2,4)= (2,2)(4,4)  (2,1)(2,5)(2,6)  (1,4)(3,4)(6,4)\\
+(2,5)= (2,1)(2,3)  (2,4)(2,6)(1,5) (3,5)(4,5)(6,5)\\
+(2,6)= (2,2)(6,6)  (2,3)(2,4)(2,5)  (1,6)(3,6)(4,6)\\
+\end{flushleft}
+
+\begin{flushleft}
+(3,4)=  (3,1)(3,2)  (3,5)(3,6)(1,4)   (2,4)(5,4)(6,4)\\
+(3,5)=  (3,3)(5,5)  (3,1)(3,4)(3,6)   (1,5)(4,5)(6,5)\\
+(3,6)=  (3,3)(6,6)  (3,2)(3,4)(3,5)   (1,6)(2,6)(5,6)\\
+\end{flushleft}
+
+\begin{flushleft}
+(4,5)=  (4,4)(5,5)  (4,1)(4,3)(4,6)   (1,5)(2,5)(6,5)\\
+(4,6)=  (4,4)(6,6)  (4,1)(4,2)(4,5)   (1,6)(2,6)(5,6)\\
+\end{flushleft}
+
+\begin{flushleft}
+(5,6)=  (5,5)(6,6)  (5,2)(5,3)(5,4)   (1,6)(3,6)(4,6)\\
+\end{flushleft}
+\end{LARGE}
+\section*{3) Preguntas}
+
+\begin{Large}
+\begin{itemize}
+ \item ¿Que estructura de datos podría representar un lanzamiento de dados?
+ \begin{itemize}
+ \item El lanzamiento de los dados es una secuencia que forma vértices entre el estado anterior y el estado actual que cumplen con las propiedad regida por la rotación del dado la cual es solo puede girar a un lado adyacente.
+ \end{itemize}
+
+\item ¿Que algoritmo  utilizar para generar dicha estructura?
+\begin{flushleft}
+\textbf{Algoritmo\\}
+1)Inicio.\\
+2)Ambos dados empiezan en un numero entre el 1 y el 6. \\
+3)Solo un dado rota noventa grados de forma aleatoria y el otro permanece como esta.\\
+4)El dado que se movió muestra un numero aleatorio entre los números posibles gracias al giro de noventa grados.\\
+5)El segundo dado repite el paso 3 y 4.\\
+6)Ambos dados darán un resultado.\\
+7)Fin\\
+
+\end{flushleft}
+\item ¿Como nos aseguramos que ese algoritmo siempre produce un resultado?
+\begin{flushleft}
+\begin{enumerate}
+\item Se tiene que contar con dos dados
+\item No es necesario hacer la rotación de dados ya que siempre habrá un resultado.
+\item Los pasos del algoritmo anterior se tienen que cumplir.
+\item El resultado mostrado por los dados tiene que aparecer en el grafo creado anteriormente.
+\end{enumerate}
+Si se cumple todo lo mencionado anteriormente se obtendrá una pareja de números que representan la combinación de resultados de ambos dado.
+\end{flushleft}
+\end{itemize}
+
+\end{Large}
+\end{document}
