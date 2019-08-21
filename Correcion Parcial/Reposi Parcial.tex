@@ -1,0 +1,100 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Javier Lopez Y Jorge Gerrero }
+\title{Hoja de trabajo 1}
+\begin{document}
+\begin{Huge}
+Hoja de trabajo \# 3
+\end{Huge}
+\section*{Ejercicio \#1}
+$
+1) \forall n \geq 1 \\
+2 \times n es par \\
+\textbf{Caso base} \\
+n = 1 \\
+2(1)$ es par \\$
+2$ es par \\$
+\textbf{Caso inductivo} \\
+2 \ast n $ es par \\$
+n = n+1\\
+2(n+1) $es par \\
+2n + 2 es par \\
+2 es par \\
+2) $\forall \geq 4 \\
+2^{n} < n! \\
+n! = 1x2x3x...x(x-1)xn$\\
+\textbf{Caso Base}\\
+$n = 4\\
+2^{4}<1\times2\times3 \\
+16<2^{4}$ \\
+\textbf{Caso inductivo} \\
+$n = n+1 \\
+\forall n \geq 4, 2^{n} < n! \\
+2^{n}\ast 2 < n! (n+1) \\
+2[2^{n}<n!(n+1)] \\
+$
+\section*{Ejercicio \#2}
+$1) n! = 1\otimes 2 \otimes 3 \otimes ... \otimes (n+1) \otimes n\\ $
+$ n! $
+$\left\{
+	\begin{array}{ll}
+		
+		1, 5: n = 0 \\
+		(x!) \otimes (\sigma (x))		
+		
+	\end{array}
+\right.$ \\ \\
+2) $ a \ominus b = $
+$\left\{
+	\begin{array}{ll}
+		a   \mbox{ / }  b=0 \\
+		0 \mbox{ / }    a\wedge b = 0 \\
+		\sigma (x\ominus b) \mbox{/} a = \sigma (x)
+	\end{array}
+\right.$ \\
+$4) a^{b} = b\otimes a\otimes a ... ($b veces)$\\ $
+$ a^{b}$
+$\left\{
+	\begin{array}{ll}
+		1 "si" b =0 \\
+		0 "si" a = 0\\
+		a\otimes a $"si"$ b= \sigma (i)
+	\end{array}
+\right.$ \\
+\section*{Ejercicio \#3}
+$ a \otimes b = $
+$\left\{
+	\begin{array}{ll}
+		0   \mbox{ / }  a\vee b=0 \\
+		a  \mbox{ / }  b=1 \\  
+		B \mbox{ / }  a=1 \\
+		a\oplus(a\otimes x) \mbox{ / }  \sigma (x)
+	\end{array}
+\right.
+\\
+2 \otimes a = a\oplus a \\
+$
+\textbf{Caso base}\\
+$
+2 \otimes 0 = 0 \oplus 0 \\
+0 \oplus (0 \otimes 1) = 0 \oplus 0 \\
+0 \oplus 0 = 0 \oplus 0 \\
+0 = 0\\
+$
+\textbf{Caso inductivo }\\
+$
+2 \otimes \sigma (a) = \sigma (a) \oplus \sigma (a) \\ 
+\sigma (a) \oplus (\sigma (a) \otimes 1) = \sigma (a) \oplus \sigma (a)\\
+\sigma (a) \oplus (\sigma (a)) = \sigma (a) \oplus \sigma (a)\\
+\sigma (a) \oplus \sigma (a) = \sigma (a) \oplus \sigma (a)\\
+\sigma (\sigma (a \oplus a)) = \sigma (\sigma (a \oplus a)) \\
+(a \oplus a) = (a \oplus a) \\
+(a \oplus a) = (2 \otimes a)
+$
+\end{document}
