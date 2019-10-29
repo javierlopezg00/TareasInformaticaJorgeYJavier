@@ -1,0 +1,33 @@
+form {
+	background-color: #262626;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 50px;
+}
+body {
+	background-color: #262626;
+}
+
+input {
+	display:block;
+	margin:auto;
+	width: 12%;
+}
+label {
+	display:block;
+	margin:auto;
+	width: 12%;
+	color: white;
+	font-size: 35px;
+}
+img {
+	display:block;
+	margin:auto;
+	background-color: #900009;
+}
+
+header {
+	background-color: #900009;
+	margin-left: 10px;
+	margin-right: 10px;
+}
